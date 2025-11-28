@@ -296,12 +296,6 @@ O app abrirá automaticamente em uma nova janela do navegador (certifique-se de 
 - Postman/Insomnia (para endpoints não implementados no app)
 - Token de autenticação obtido via `/login`
 
-### Passo a Passo para Instalação
-Não há informação relevante disponível nos materiais fornecidos.
-
-### Comandos para Execução
-Não há informação relevante disponível nos materiais fornecidos.
-
 ### Configurações Necessárias
 - Token obtido via endpoint `/login`  
 - Envio do token no header `Authorization` para rotas protegidas
