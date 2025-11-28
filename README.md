@@ -35,7 +35,7 @@ Sistema multiplataforma voltado para informar e conscientizar a população sobr
 | Interface Flutter | Concluído |
 
 ### Screenshots
-![Tela de Login](<screencaptures\/Tela_Login.png>) ![Tela de Cadastro](<screencaptures\/Tela_Cadastro.png>) ![Visão do Mapa Interativo e os Pontos de Coleta](<screencaptures\/Mapa_Pontos.png>) ![Visão da Aba Lateral de Filtros](<screencaptures\/Mapa_Completo.png>) ![Visão do Mapa com Pontos de Coleta e Quadrantes de Turnos de Coleta](<Captura de tela 2025-11-27 213555.png>)
+![Tela de Login](<screencaptures\/Tela_Login.png>) ![Tela de Cadastro](<screencaptures\/Tela_Cadastro.png>) ![Visão do Mapa Interativo e os Pontos de Coleta](<screencaptures\/Mapa_Pontos.png>) ![Visão da Aba Lateral de Filtros](<screencaptures\/Aba_Lateral.png>) ![Visão do Mapa com Pontos de Coleta e Quadrantes de Turnos de Coleta](<screencaptures\/Mapa_Completo.png>)
 
 ---
 
