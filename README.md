@@ -90,6 +90,131 @@ WAQI/OpenAQ – Dados de Qualidade do Ar
 ## 5. Instruções de Instalação e Execução
 
 ---
+
+## Guia de Instalação e Execução do Front
+**REQUISITOS DO SISTEMA**
+
+**Flutter**
+
+-   Flutter SDK >= 3.4.4 < 4.0.0
+    
+-   Dart >= 3.4.4 < 4.0.0
+    
+-   Comando para verificar versão: `flutter --version`
+    
+-   Lembre-se de verificar o arquivo android/local.properties e apontar corretamente os caminhos dos SDKs do seu Android e Flutter
+    
+
+**Android**
+
+-   Android Studio (ou SDK standalone se usar VS Code)
+    
+-   Android SDK 33 ou superior
+    
+-   Emulador Android configurado ou dispositivo físico
+    
+-   Java 17 (necessário para o Gradle)
+    
+-   Comando para verificar Java: `java -version`
+    
+
+**Web**
+
+-   Google Chrome instalado
+    
+-   Flutter Web ativado
+    
+-   Comando para listar dispositivos: `flutter devices`
+    
+
+* * *
+
+**DEPENDÊNCIAS PRINCIPAIS DO FLUTTER**
+
+-   `flutter_map`
+    
+-   `latlong2`
+    
+-   `flutter_map_geojson`
+    
+-   `flutter_map_cancellable_tile_provider`
+    
+-   `geolocator`
+    
+-   `provider`
+    
+-   `flutter_secure_storage`
+    
+-   `http`
+    
+
+Comando para instalar dependências:  
+`flutter pub get`
+
+* * *
+
+**ESTRUTURA DO PROJETO**
+
+-   Projeto segue estrutura padrão Flutter (`android`, `web`, `lib`)
+    
+-   Provider é usado para gerenciamento de estado
+    
+-   API consumida na nuvem
+    
+
+* * *
+
+**CONFIGURAÇÃO DA URL DA API**
+
+-   Arquivo: `lib/pages/main/controller/api_controller.dart`
+    
+-   Linha: `static const String baseUrl = "https://trabalho-integracao-sistemas.vercel.app"`
+    
+-   Para testar outra API, basta alterar essa linha
+
+* * *
+
+**COMO RODAR O PROJETO**
+
+**1. Instalar dependências**
+
+`flutter pub get`
+
+**2. Rodar no navegador (Web)**
+
+`flutter run -d chrome`
+
+O app abrirá automaticamente em uma nova janela do navegador (certifique-se de permitir a leitura de localização quando solicitado)
+
+**3. Rodar no Android (emulador ou dispositivo físico)**
+
+-   Iniciar emulador no Android Studio ou via terminal:
+
+`flutter emulators --launch <nome_do_emulador>`
+
+-   Rodar app:
+
+`flutter run`
+
+* * *
+
+**SOLUÇÃO DE PROBLEMAS COMUNS**
+
+**Erro “Java 17 required”**
+
+-   Instalar Java 17:
+    
+
+`sudo apt install openjdk-17-jdk`
+
+**Erro no Android SDK**
+
+-   Abrir Android Studio → SDK Manager
+    
+-   Instalar: Android SDK Platform 33/34, Android SDK Tools, Google Play Services
+
+---
+
 ## Guia de Execução da API (Caso necessite realizar chamadas HTTP sem usar o app)
 
 ### Requisitos
@@ -208,3 +333,13 @@ Não há informação relevante disponível nos materiais fornecidos.
 | Maria Elania Vieira Asevedo | Análise e Planejamento |
 | Victor Martins Castro Freire | Desenvolvimento, Arquitetura e Modelagem |
 | Vinícius Dantas de Sousa | Modelagem |
+
+
+## 9. Observações
+   - Conforme alinhado com o professor atráves do fórum, foi necessário uma adaptação na estrutura do repositório devido ao fato de usarmos o Flutter como framework.
+     Por conta disso, adaptamos a estrutura da pasta frontend de forma que o código principal se encontra na pasta frontend/lib(widgets, páginas e modelos do flutter),
+     o conteúdo mobile se encontra na pasta /android, o conteúdo web na pasta /web e o arquivo pubspec.yaml é equivalente ao que seria o package.json. O arquivo pubspec.lock foi adicionado por questões de garantia de compatibilidade entre os pacotes do aplicativo.
+
+   - Também foi adicionado o arquivo mapa.iml por exigência dos pacotes de geolocalização/renderização de mapas.
+
+   - O arquivo database/schema.sql foi criado convertendo o schema real do banco no Back4App. O Back4App, sendo uma plataforma BaaS (Backend-as-a-Service) baseada no    Parse Server, utiliza um banco de dados MongoDB (NoSQL) como padrão. Por isso, a exportação nativa do schema é fornecida em formato JSON, que é o padrão para bancos de dados orientados a documentos. O schema SQL resultante é estruturalmente equivalente ao original do Back4App, permitindo que qualquer sistema SQL tradicional possa compreender a organização do banco de dados do aplicativo. Caso necessário, entre em contato com um dos membros da equipe para obter o schema em seu formato JSON original.
