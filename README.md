@@ -48,7 +48,7 @@ Tela de Login ![Tela de Login](<screenshots\/Tela_Login.png>)  Tela de Cadastro 
 ### Frameworks e Bibliotecas
 - Express.js  
 - Flutter  
-- Provider/Bloc  
+- Provider  
 - Bibliotecas de mapas interativos (flutter_map, flutter_map_geojson, latlong2)
 
 ### Banco de Dados
@@ -59,6 +59,7 @@ Tela de Login ![Tela de Login](<screenshots\/Tela_Login.png>)  Tela de Cadastro 
 - Swagger  
 - Jest / Supertest
 - VsCode
+- Android Studio
 
 ---
 
