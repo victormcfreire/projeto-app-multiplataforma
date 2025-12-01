@@ -314,7 +314,42 @@ O app abrirá automaticamente em uma nova janela do navegador (certifique-se de 
 ---
 
 ## 7. Validação com Público-Alvo
-*(Seção deixada em branco conforme solicitado.)*
+
+**Definição específica do público-alvo**
+
+*   **Organização:** Oficina Automotiva Jardel Car
+    
+*   **Endereço:** Rua Cosme Jerônimo, nº 1259, Bairro Aracapé — Fortaleza (CE)
+    
+*   **Tipo:** Pequena empresa (oficina automotiva)
+    
+*   **Necessidade principal:** Descarte correto de materiais sem uso e recicláveis; encontrar pontos de coleta próximos ao endereço da empresa.
+    
+*   **Observação:** O sistema também serve para pessoas físicas interessadas em descarte sustentável, mas a validação foi feita com foco em um pequeno negócio.
+    
+
+**Resumo do processo de validação**
+
+1.  **Apresentação do sistema:** Demonstração remota via Google Meet para a administradora da oficina (Antonia Elionadia Vieira Asevedo).
+    
+2.  **Execução de testes:** A avaliadora (administradora/proprietária) testou funcionalidades principais: registro, login, visualização do mapa, localização de pontos de coleta e filtros por turno.
+    
+3.  **Coleta de feedback:** Aplicação de formulário via Google Forms após a sessão de testes.
+    
+4.  **Documentação:** Formulário e comprovantes da reunião foram anexados ao relatório de validação (conforme validation_report.md).
+    
+
+**Principais feedbacks recebidos**
+
+*   Feedback positivo sobre a **usabilidade**: interface intuitiva para localizar pontos de coleta.
+    
+*   Avaliadora relatou que as informações de pontos de coleta eram **relevantes e bem localizadas** para o endereço da oficina.
+    
+
+**Ajustes implementados**
+
+*   _Nenhum ajuste técnico foi implementado_, pois o público-alvo declarou estar satisfeito com as funcionalidades testadas.
+    
 
 ---
 
